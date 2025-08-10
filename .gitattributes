@@ -1,0 +1,13 @@
+# Handle binary files properly
+*.exe binary
+*.dll binary
+*.msi binary
+*.zip binary
+
+# Text files should be normalized
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.md text eol=lf
+*.xml text eol=lf
+*.json text eol=lf
