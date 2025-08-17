@@ -15,7 +15,7 @@
                     <div class="card-header bg-primary text-white text-center">
                         <h2 class="mb-0">
                             <i class="fas fa-network-wired me-2"></i>
-                            Gerador de XML vmPing
+                            vmPing
                         </h2>
                     </div>
                     <div class="card-body">
@@ -25,7 +25,7 @@
                         <!-- Information Alert -->
                         <div class="alert alert-info" role="alert">
                             <i class="fas fa-info-circle me-2"></i>
-                            <strong>Instruções:</strong> Esta ferramenta gera um pacote ZIP contendo o executável vmPing e o arquivo de configuração XML modificado com os endereços IP e configurações adicionadas abaixo.
+                            <strong>Instruções:</strong> Esta ferramenta gera um pacote ZIP contendo o programa vmPing e o arquivo de configuração XML modificado com os endereços IP e configurações adicionadas abaixo.
                         </div>
 
                         <!-- Main Form -->
@@ -107,7 +107,7 @@
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-primary btn-lg">
                                     <i class="fas fa-download me-2"></i>
-                                    Gerar Pacote ZIP
+                                    Download Pacote ZIP
                                 </button>
                             </div>
                         </form>
@@ -120,7 +120,7 @@
                             </h6>
                             <div class="bg-dark p-3 rounded">
                                 <small class="text-muted">
-                                    Entrada: Primeiro Octeto = <span class="text-warning">10</span>, Segundo Octeto = <span class="text-warning">192</span>, Terceiro Octeto = <span class="text-warning">168</span>, Número Java = <span class="text-warning">0123</span><br>
+                                    Entrada: Primeiro Octeto = <span class="text-warning">10</span>, Segundo Octeto = <span class="text-warning">192</span>, Terceiro Octeto = <span class="text-warning">168</span><br>
                                     Resultado: <code class="text-info">10.x.x.100</code> → <code class="text-success">10.192.168.100</code>
                                 </small>
                             </div>
@@ -146,15 +146,15 @@
         const xmlTemplate = `<?xml version="1.0" encoding="utf-8"?>
 <vmping>
   <aliases>
-    <alias host="10.x.x.60">Terminal-Farmaceutico</alias>
-    <alias host="10.x.x.12">Servidor-Banco</alias>
+    <alias host="10.x.x.60">Farmaceutico</alias>
+    <alias host="10.x.x.12">Banco-12</alias>
     <alias host="10.x.x.30">Gerente</alias>
     <alias host="10.x.x.70">Saber</alias>
     <alias host="10.x.x.240">Telefone-IP</alias>
     <alias host="10.x.x.31">Consulta-Preco-1</alias>
     <alias host="10.x.x.32">Consulta-Preco-2</alias>
-    <alias host="10.x.x.44">Wifi1</alias>
-    <alias host="10.x.x.252">Wifi2</alias>
+    <alias host="10.x.x.44">Wifi1-44</alias>
+    <alias host="10.x.x.252">Wifi-252</alias>
     <alias host="10.x.x.61">Impressora-Cupom</alias>
     <alias host="10.x.x.62">Impressora-Controlados</alias>
     <alias host="10.x.x.29">Impressora-Laser</alias>
@@ -173,7 +173,7 @@
     <alias host="10.x.x.4">PDV4</alias>
   </aliases>
   <favorites>
-    <favorite title="JAVA" columncount="6">
+    <favorite title="JAVA" columncount="5">
       <host>10.x.x.60</host>
       <host>10.x.x.12</host>
       <host>10.x.x.30</host>
