@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Download</title>
+    <title>Download XML</title>
     <style>
         body {
             background-color: white;
@@ -21,10 +21,30 @@
     </style>
 </head>
 <body>
-    <button id="downloadBtn">Download</button>
+    <button id="downloadBtn">Download vmPing.xml</button>
 
     <script>
-        // Ainda sem função
-    </script>
-</body>
-</html>
+        // Conteúdo do arquivo XML
+        const xmlContent = `<?xml version="1.0" encoding="utf-8"?>
+<vmping>
+  <aliases>
+    <alias host="x.x.x.60">Terminal-Farmaceutico</alias>
+    <alias host="x.x.x.12">Banco-12</alias>
+    <alias host="x.x.x.30">Terminal-Gerente</alias>
+    <alias host="x.x.x.70">Terminal-Saber</alias>
+    <alias host="x.x.x.61">Terminal-Alternate</alias>
+    <alias host="x.x.x.240">Telefone-IP</alias>
+    <alias host="x.x.x.62">Impressora-Controlado</alias>
+    <alias host="x.x.x.61">Impressora-Oferta</alias>
+    <alias host="x.x.x.29">Impressora-Laser</alias>
+    <alias host="x.x.x.11">TC1</alias>
+    <alias host="x.x.x.13">TC2</alias>
+    <alias host="x.x.x.14">TC3</alias>
+    <alias host="x.x.x.15">TC4</alias>
+    <alias host="x.x.x.16">TC5</alias>
+    <alias host="x.x.x.31">Consulta-Preco-1</alias>
+    <alias host="x.x.x.32">Consulta-Preco-2</alias>
+    <alias host="x.x.x.44">Antena-WIFI-44</alias>
+    <alias host="x.x.x.252">Antena-WIFI-252</alias>
+    <alias host="x.x.x.">PDV1</alias>
+    <alias host="x.x.x.">PDV2</alias
